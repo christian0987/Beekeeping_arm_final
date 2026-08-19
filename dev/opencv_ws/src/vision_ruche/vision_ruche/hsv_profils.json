@@ -1,0 +1,47 @@
+{
+    "orange": {
+        "nom": "Orange",
+        "H_MIN": 0,
+        "H_MAX": 20,
+        "S_MIN": 40,
+        "S_MAX": 255,
+        "V_MIN": 40,
+        "V_MAX": 255
+    },
+    "jaune": {
+        "nom": "Jaune",
+        "H_MIN": 20,
+        "H_MAX": 60,
+        "S_MIN": 30,
+        "S_MAX": 255,
+        "V_MIN": 30,
+        "V_MAX": 255
+    },
+    "blanc": {
+        "nom": "Blanc",
+        "H_MIN": 0,
+        "H_MAX": 180,
+        "S_MIN": 0,
+        "S_MAX": 30,
+        "V_MIN": 200,
+        "V_MAX": 255
+    },
+    "beige": {
+        "nom": "Beige",
+        "H_MIN": 10,
+        "H_MAX": 35,
+        "S_MIN": 30,
+        "S_MAX": 90,
+        "V_MIN": 120,
+        "V_MAX": 220
+    },
+    "personnalise": {
+        "nom": "Personnalis\u00e9",
+        "H_MIN": 0,
+        "H_MAX": 109,
+        "S_MIN": 0,
+        "S_MAX": 99,
+        "V_MIN": 200,
+        "V_MAX": 255
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="beekeeping_robot">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import beekeeping_robot urdf file -->
+    <xacro:include filename="$(find beekeeping_robot_description)/urdf/beekeeping_robot.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="beekeeping_robot.ros2_control.xacro" />
+
+
+    <xacro:beekeeping_robot_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

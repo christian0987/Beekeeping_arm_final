@@ -1,0 +1,9 @@
+# Default initial positions for beekeeping_robot's ros2_control fake system
+
+initial_positions:
+  robot_arm_base_turn: 0
+  robot_arm_down_joint: 0
+  robot_arm_front_joint: 0
+  robot_arm_turn_joint: 0
+  robot_arm_up_joint: 0
+  robot_hand_joint: 0

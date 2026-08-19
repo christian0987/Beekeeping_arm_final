@@ -1,0 +1,2 @@
+# Copier le contenu en changeant le nom
+sed 's/name="robot"/name="beekeeping_robot"/g' src/robot_moveit_config/config/robot.srdf > src/robot_moveit_config/config/beekeeping_robot.srdf

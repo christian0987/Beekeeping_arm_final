@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="beekeeping_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0078822425096978 -0.251261545339016 -0.0924531873814041"
+        rpy="0 0 0" />
+      <mass
+        value="20.3183216641707" />
+      <inertia
+        ixx="0.994429307107158"
+        ixy="4.16384933672047E-05"
+        ixz="-1.83688307072997E-06"
+        iyy="0.520086575223836"
+        iyz="-0.00157637318587682"
+        izz="1.48122814486441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_turn_1_Link">
+    <inertial>
+      <origin
+        xyz="0.0852765866529258 2.80377931789477E-05 -0.14575995377424"
+        rpy="0 0 0" />
+      <mass
+        value="0.86917713424657" />
+      <inertia
+        ixx="0.0027724062383689"
+        ixy="-1.25631622887161E-07"
+        ixz="0.000393504488702354"
+        iyy="0.003567967856409"
+        iyz="8.25797545004143E-07"
+        izz="0.00143531676325427" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_turn_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.579019189273203 -0.766073234998307 -0.237000112421223"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_turn_1_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_1_Link">
+    <inertial>
+      <origin
+        xyz="0.0659287248104198 2.22044604925031E-16 -1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="12.8396823905676" />
+      <inertia
+        ixx="0.280411323131623"
+        ixy="3.53769918668426E-17"
+        ixz="-2.00837774294797E-17"
+        iyy="0.15010978480718"
+        iyz="-3.97928779087051E-18"
+        izz="0.150109849998492" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel1"
+    type="continuous">
+    <origin
+      xyz="-0.0687110643130795 0 -0.350548674522151"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_turn_1_Link" />
+    <child
+      link="wheel_1_Link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="wheel_turn_2_Link">
+    <inertial>
+      <origin
+        xyz="0.0858130897732468 0.000115732410172984 -0.145975471823837"
+        rpy="0 0 0" />
+      <mass
+        value="0.877832651539379" />
+      <inertia
+        ixx="0.00278302973762685"
+        ixy="-1.25324757004484E-07"
+        ixz="0.000393504524651509"
+        iyy="0.00356885664963925"
+        iyz="8.25658974160406E-07"
+        izz="0.00144682089748994" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.533333333333333 0.713725490196078 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_turn_2_joint"
+    type="continuous">
+    <origin
+      xyz="0.579019189273205 0.193926765001691 -0.237000112421222"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_turn_2_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_2_Link">
+    <inertial>
+      <origin
+        xyz="0.0659287248104203 -3.64046409514434E-16 -1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="12.8396823905676" />
+      <inertia
+        ixx="0.280411323131624"
+        ixy="1.64850621393629E-17"
+        ixz="-4.23621419522453E-17"
+        iyy="0.15010978480718"
+        iyz="2.49741816277832E-18"
+        izz="0.150109849998493" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel2"
+    type="continuous">
+    <origin
+      xyz="-0.068711064313084 0 -0.350548674522152"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_turn_2_Link" />
+    <child
+      link="wheel_2_Link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="wheel_turn_3_Link">
+    <inertial>
+      <origin
+        xyz="-0.0859032137095348 -0.000126955712239529 -0.146218287533006"
+        rpy="0 0 0" />
+      <mass
+        value="0.881588661176239" />
+      <inertia
+        ixx="0.00278321231798518"
+        ixy="-1.2532473158313E-07"
+        ixz="-0.000393504524182647"
+        iyy="0.00356891675551931"
+        iyz="-8.25658948045215E-07"
+        izz="0.00144700347757063" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_turn_3_joint"
+    type="continuous">
+    <origin
+      xyz="-0.578980805037107 -0.766073226840961 -0.237066377983132"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_turn_3_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_3_Link">
+    <inertial>
+      <origin
+        xyz="-0.0659287248104203 2.22044604925031E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="12.8396823905676" />
+      <inertia
+        ixx="0.280411323131624"
+        ixy="2.20623356997915E-17"
+        ixz="2.44449533577056E-17"
+        iyy="0.150109784807181"
+        iyz="1.77735232932931E-17"
+        izz="0.150109849998493" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel3"
+    type="continuous">
+    <origin
+      xyz="0.0687110643130819 0 -0.350548674522152"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_turn_3_Link" />
+    <child
+      link="wheel_3_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="wheel_turn_4_Link">
+    <inertial>
+      <origin
+        xyz="-0.0858230689984957 -2.76608434932621E-05 -0.146055887107915"
+        rpy="0 0 0" />
+      <mass
+        value="0.878545531714964" />
+      <inertia
+        ixx="0.0027831071915242"
+        ixy="-1.26038654424282E-07"
+        ixz="-0.00039350459874215"
+        iyy="0.00356883916633107"
+        iyz="-8.26071169048011E-07"
+        izz="0.00144686399641395" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.533333333333333 0.713725490196078 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_turn_4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_turn_4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.57898080503711 0.193926773159039 -0.237066377983132"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_turn_4_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_4_Link">
+    <inertial>
+      <origin
+        xyz="-0.0659287248104197 -2.21401392589433E-16 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="12.8396823905675" />
+      <inertia
+        ixx="0.280411323131623"
+        ixy="1.90063752169277E-17"
+        ixz="6.27189309446951E-17"
+        iyy="0.15010978480718"
+        iyz="-1.70981810570641E-16"
+        izz="0.150109849998492" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/wheel_4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel4"
+    type="continuous">
+    <origin
+      xyz="0.0687110643130866 0 -0.350548674522151"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_turn_4_Link" />
+    <child
+      link="wheel_4_Link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="robot_arm_base_turn_Link">
+    <inertial>
+      <origin
+        xyz="0 0.0157680021392145 0.0510001474998434"
+        rpy="0 0 0" />
+      <mass
+        value="1.53926664282373" />
+      <inertia
+        ixx="0.00203144663399423"
+        ixy="9.54212203504635E-06"
+        ixz="-7.94669950767944E-07"
+        iyy="0.00238424150431813"
+        iyz="-7.35740634078354E-07"
+        izz="0.00328065105025093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_base_turn_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_base_turn_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="robot_arm_base_turn"
+    type="prismatic">
+    <origin
+      xyz="-0.186480743949464 -0.233073257188936 0.0290000000000128"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="robot_arm_base_turn_Link" />
+    <axis
+      xyz="0.999999999999998 0 0" />
+    <limit
+      lower="-0.1"
+      upper="0.38"
+      effort="30"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="robot_arm_turn_Link">
+    <inertial>
+      <origin
+        xyz="-0.0115851060138409 0.023482000072099 0.559687579523252"
+        rpy="0 0 0" />
+      <mass
+        value="4.43973064141482" />
+      <inertia
+        ixx="0.320710025464699"
+        ixy="-2.14544532038884E-05"
+        ixz="-4.56178842115496E-10"
+        iyy="0.322579812289502"
+        iyz="-0.00201787697885278"
+        izz="0.00539886585024202" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_turn_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.870588235294118 0.870588235294118 0.870588235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_turn_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="robot_arm_turn_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0267151806648131 0.000281862211883699 0.0720000000000446"
+      rpy="0 0 0" />
+    <parent
+      link="robot_arm_base_turn_Link" />
+    <child
+      link="robot_arm_turn_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="robot_arm_up_Link">
+    <inertial>
+      <origin
+        xyz="-0.00474624230976634 -0.0699896149411955 -0.00710446674213161"
+        rpy="0 0 0" />
+      <mass
+        value="1.96179062295688" />
+      <inertia
+        ixx="0.00592811537768536"
+        ixy="-1.52385350666985E-05"
+        ixz="-1.99468888204646E-06"
+        iyy="0.00312990614416112"
+        iyz="5.57156280508167E-08"
+        izz="0.0049523995854291" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_up_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.533333333333333 0.713725490196078 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_up_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="robot_arm_up_joint"
+    type="prismatic">
+    <origin
+      xyz="-0.00316158014555931 -0.0282818634072928 0.172176146705728"
+      rpy="0 0 0" />
+    <parent
+      link="robot_arm_turn_Link" />
+    <child
+      link="robot_arm_up_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.05"
+      upper="1"
+      effort="30"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="robot_arm_front_Link">
+    <inertial>
+      <origin
+        xyz="-0.0258330925763131 -0.0336991863009173 0.0262663374395828"
+        rpy="0 0 0" />
+      <mass
+        value="3.6090995307416" />
+      <inertia
+        ixx="0.0833259072757234"
+        ixy="1.68249739700075E-05"
+        ixz="-2.73196323690699E-05"
+        iyy="0.0412075362564895"
+        iyz="-0.00130315897419109"
+        izz="0.0450548073015281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_front_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.6 1 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_front_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="robot_arm_front_joint"
+    type="prismatic">
+    <origin
+      xyz="0.0263767980430697 -0.34980268877419 -0.0867350165855609"
+      rpy="0 0 0" />
+    <parent
+      link="robot_arm_up_Link" />
+    <child
+      link="robot_arm_front_Link" />
+    <axis
+      xyz="0 -0.999999999999995 0" />
+    <limit
+      lower="0"
+      upper="0.1"
+      effort="30"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="robot_arm_down_Link">
+    <inertial>
+      <origin
+        xyz="0.00137813306918749 3.93931695542582E-05 -0.00983589254660666"
+        rpy="0 0 0" />
+      <mass
+        value="0.924429066388" />
+      <inertia
+        ixx="0.00552717183944487"
+        ixy="2.72426778416782E-08"
+        ixz="1.19200605759588E-07"
+        iyy="0.00445848811542164"
+        iyz="-2.9934496760691E-12"
+        izz="0.00136755003033042" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_down_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.705882352941176 0.705882352941176 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_arm_down_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="robot_arm_down_joint"
+    type="prismatic">
+    <origin
+      xyz="-0.0489999980309133 -0.0291971396132438 -0.0278010402673278"
+      rpy="0 0 0" />
+    <parent
+      link="robot_arm_front_Link" />
+    <child
+      link="robot_arm_down_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="0"
+      effort="30"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="robot_hand_Link">
+    <inertial>
+      <origin
+        xyz="-0.0139486542647903 -0.00114178187693548 0.0121583697301937"
+        rpy="0 0 0" />
+      <mass
+        value="0.244853291103659" />
+      <inertia
+        ixx="0.00205849377323207"
+        ixy="1.96138069110678E-07"
+        ixz="2.69162049999719E-08"
+        iyy="0.000229760111275271"
+        iyz="3.94834424961816E-07"
+        izz="0.00227121679820925" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_hand_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.8 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/robot_hand_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="robot_hand_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0103190012623947 0 -0.244140089073612"
+      rpy="0 0 0" />
+    <parent
+      link="robot_arm_down_Link" />
+    <child
+      link="robot_hand_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="finger_1_Link">
+    <inertial>
+      <origin
+        xyz="-7.23228284094102E-07 0.00149999999999961 -7.10402514814135E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00141931558328103" />
+      <inertia
+        ixx="3.01745293511585E-07"
+        ixy="-1.52263309997443E-15"
+        ixz="-6.49943112081179E-08"
+        iyy="3.47223848448597E-07"
+        iyz="1.55497825470954E-14"
+        izz="4.76075957020648E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/finger_1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.807843137254902 0.843137254901961 0.905882352941176 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/finger_1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger_1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0428127601809608 -0.233796089149604 0.0141670704058222"
+      rpy="0 0 0" />
+    <parent
+      link="robot_hand_Link" />
+    <child
+      link="finger_1_Link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="finger_2_Link">
+    <inertial>
+      <origin
+        xyz="0.000722720059445348 -0.0102500000000026 -0.0109250978150482"
+        rpy="0 0 0" />
+      <mass
+        value="0.00145117136805809" />
+      <inertia
+        ixx="3.04115418108654E-07"
+        ixy="-5.1894022276166E-17"
+        ixz="6.55289430984426E-08"
+        iyy="3.50111844492249E-07"
+        iyz="-5.14100511945614E-16"
+        izz="4.81732508681366E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/finger_2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.807843137254902 0.843137254901961 0.905882352941176 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/koffi-christian/dev/ros_ws/src/moveit/beekeeping_robot_description/meshes/finger_2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger_2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0166811424744138 0.2395461291552 0.0250000001137111"
+      rpy="0 0 0" />
+    <parent
+      link="robot_hand_Link" />
+    <child
+      link="finger_2_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

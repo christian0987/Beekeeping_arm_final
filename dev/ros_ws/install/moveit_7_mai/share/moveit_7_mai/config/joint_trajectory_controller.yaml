@@ -1,0 +1,23 @@
+# Configuration pour joint_trajectory_controller
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+
+joint_trajectory_controller:
+  type: joint_trajectory_controller/JointTrajectoryController
+  ros__parameters:
+    joints:
+      - robot_arm_base_turn
+      - robot_arm_turn_joint
+      - robot_arm_up_joint
+      - robot_arm_front_joint
+      - robot_arm_down_joint
+      - robot_hand_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_nonzero_velocity_at_trajectory_end: true

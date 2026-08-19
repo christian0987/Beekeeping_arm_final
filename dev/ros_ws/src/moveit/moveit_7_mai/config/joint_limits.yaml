@@ -1,0 +1,60 @@
+# joint_limits.yaml - Version corrigée avec accélérations
+default_velocity_scaling_factor: 0.1
+default_acceleration_scaling_factor: 0.1
+
+joint_limits:
+  robot_arm_base_turn:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: true
+    max_acceleration: 0.5
+    has_jerk_limits: false
+    
+  robot_arm_turn_joint:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: true
+    max_acceleration: 0.5
+    has_jerk_limits: false
+    
+  robot_arm_up_joint:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: true
+    max_acceleration: 0.5
+    has_jerk_limits: false
+    
+  robot_arm_front_joint:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: true
+    max_acceleration: 0.5
+    has_jerk_limits: false
+    
+  robot_arm_down_joint:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: true
+    max_acceleration: 0.5
+    has_jerk_limits: false
+    
+  robot_hand_joint:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: true
+    max_acceleration: 0.5
+    has_jerk_limits: false
+    
+  finger_1_joint:
+    has_velocity_limits: true
+    max_velocity: 0.3
+    has_acceleration_limits: true
+    max_acceleration: 0.3
+    has_jerk_limits: false
+    
+  finger_2_joint:
+    has_velocity_limits: true
+    max_velocity: 0.3
+    has_acceleration_limits: true
+    max_acceleration: 0.3
+    has_jerk_limits: false
