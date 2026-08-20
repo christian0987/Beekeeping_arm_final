@@ -13,7 +13,7 @@ Le système utilise une caméra pour détecter les couvercles et les cadres de c
 
 ### Fonctionnalites principales
 
-- Détection du cadre : Identification du rectangle externe (couvercle) par traitement d'image a l'aide de masques HSV et d'operations morphologiques
+-Détection du cadre : Identification du rectangle externe (couvercle) par traitement d'image a l'aide de masques HSV et d'operations morphologiques
 
 -Alignements iteratifs : Alignement automatique des axes J0 (vertical), J1 (angulaire) et J3 (centre horizontal) par asservissement visuel
 
