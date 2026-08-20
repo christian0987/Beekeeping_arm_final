@@ -1,7 +1,7 @@
 # Beekeeping_arm
 # README
 
-## Detection Autonome des Barres + Inspection
+
 
 ### Description
 
