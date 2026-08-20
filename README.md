@@ -226,7 +226,7 @@ BarreDetectionNode
 +-- Vision
 |   +-- Detection du cadre (masques HSV)
 |   +-- Warp perspective
-|   +-- Detection des barres (projection horizontale)
+|   +-- Detection des cadres (projection horizontale)
 +-- Mouvements
 |   +-- Alignements (J0, J1, J3)
 |   +-- Descente calculee
